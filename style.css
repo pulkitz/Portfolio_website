@@ -1,6 +1,6 @@
 * {
-    margin: 0 0 0;
-    padding: 0 0 0;
+    margin: 0;
+    padding: 0;
     scroll-behavior: smooth;
    
 }
@@ -109,13 +109,24 @@ div {
 
 }
 
-.cursor{
-    width: 15px;
-    height: 15px;
-    background: red;
-    position: absolute;
-    border-radius: 50%;
-    pointer-events: none;
-    transition: transform 0.1s ease-out;
-    box-shadow: 0 0 5px red, 0 0 10px red; /* Glow effect */
+#lang {
+    font-family: "Press Start 2P", cursive;
+    font-size: 50px;
+    color: burlywood;
+    text-align: center; /* Ensures text alignment */
+    display: block; /* Makes sure it behaves as a block element */
+    margin: 20px auto; /* Centers it */
+    width: 100%; /* Takes full width for proper centering */
+    transform: translate(-0%, 200%);
+}
+
+
+#Skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack elements vertically */
+    text-align: center;
+    width: 100%;
+    transform: translateX(-30px);
 }
