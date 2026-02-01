@@ -2,6 +2,7 @@
     padding: 0%;
     margin: 0%;
     scroll-behavior: smooth;
+    cursor: url('navigate.png');
 }
 
 #Main{
@@ -12,7 +13,7 @@
 #hotbar{
     display: flex;
     justify-content: center;
-    gap: 10rem;
+    gap: clamp(2rem, 5vw, 10rem);
     list-style-type: none;
 }
 
@@ -58,8 +59,8 @@
 }
 
 #pfp{
-    height: 500px;
-    width: 500px;
+    width: min(80vw, 400px);
+    aspect-ratio: 1 / 1;
     border-radius: 50%;
 }
 
@@ -222,6 +223,8 @@
 .logo{
     display: flex;
     justify-content: center;
+    text-decoration: none;
+    text-decoration-color: none;
     font-size: 100px;
     gap: 5vw;
     margin-top: 15vh;
