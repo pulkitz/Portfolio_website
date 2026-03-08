@@ -1,231 +1,128 @@
-*{
-    padding: 0%;
-    margin: 0%;
-    scroll-behavior: smooth;
-    cursor: url('navigate.png');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: none;
 }
 
-#Main{
-    font-family: ubuntu;
-    font-weight: 500;
+#cursor {
+  border-radius: 50%;
+  z-index: 10;
+  height: 20px;
+  width: 20px;
+  border: 2px solid white;
+  position: fixed;
+  pointer-events: none;
 }
 
-#hotbar{
-    display: flex;
-    justify-content: center;
-    gap: clamp(2rem, 5vw, 10rem);
-    list-style-type: none;
+#sml_cursor {
+  border-radius: 50%;
+  z-index: 10;
+  height: 10px;
+  width: 10px;
+  background-color: white;
+  position: fixed;
+  pointer-events: none;
+  box-shadow: red 0px 0px 10px, red 0px 0px 20px, red 0px 0px 30px;
 }
 
-#txtl{
-    text-decoration: none;
-    color: aliceblue;
-    display: inline-block;
-    transition: all ease 0.5s;
+body {
+  background-color: #150F30;
 }
 
-#a{
-    transition: all ease 0.5s;
+#Landing_page {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  color: white;
+  font-family: 'Press Start 2P', cursive;
 }
 
-#b{
-    transition: all ease 0.5s;
+#Profile_Picture img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
 }
 
-#c{
-    transition: all ease 0.5s;
+h1 {
+  font-family: 'Press Start 2P', cursive;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-self: center;
 }
 
-#a:hover{
-    transform: translateY(10px);
+#About_me {
+  height: 100vh;
+  width: 100%;
+  padding-top: 5vh;
+  color: rgba(255, 255, 255, 0.815);
 }
 
-#b:hover{
-    transform: translateY(10px);
+#About_me p {
+  margin: auto;
+  padding-top: 1rem;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.2rem;
 }
 
-#c:hover{
-    transform: translateY(10px);
+#card_me {
+  background-color: #0f0a27;
+  padding: 1rem;
+  border: white 2px solid;
+  transition: all 0.3s ease;
 }
 
+#card_me:hover {
 
-#Aboutme{
-    display: grid;
-    justify-content: center;
-    text-align: center;
-    color: beige;
-    margin-top: 30px;
-    
+  box-shadow: 0px 0px 0px rgba(255, 255, 255, 0.719),
+    10px 10px 0px rgba(255, 255, 255, 0.719),
+    0px 0px 0px rgba(255, 255, 255, 0.719);
+  transform: translateX(-10px);
 }
 
-#pfp{
-    width: min(80vw, 400px);
-    aspect-ratio: 1 / 1;
-    border-radius: 50%;
+#card_me h2 {
+  display: flex;
+  align-items: center;
+  color: wheat;
+  justify-content: center;
+  font-family: 'Press Start 2P', cursive;
 }
 
-
-
-#animtxt{
-   margin-top: 10px; 
+#about_me {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
 }
 
-#js{
-    color: yellow;
+#card_me:first-child{
+  grid-row: span 2;
 }
 
-#Skills{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 30px;
-    
+#card_me ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.2rem;
 }
 
-#lang{
-    font-family: "Press Start 2P", cursive;
-    color: #b8f01d;
-    
+#quote{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.Card{
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    margin-top: 50px;
-   
+#quote p {
+  font-size: 2rem;
 }
 
-#pyc{
-    height: 350px;
-    width: 200px;
-    border-radius: 25px;
-    background-color: white;
-    transition: all ease 0.5s;
-}
-
-#pyc:hover{
-    transform: translateY(-20px);
-    box-shadow: 0 20px 20px white;
-}
-
-#pyc ul{
-    margin-top: 25px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    font-size: large;
-    list-style-type: none;
-}
-
-#pyc ul li span{
-    color: blueviolet;
-}
-
-#pyc #img{
-    font-size: 10vw;
-    margin-top: 20px;
-}
-
-#htmc{
-    height: 350px;
-    width: 200px;
-    border-radius: 25px;
-    background-color: white;
-    transition: all ease 0.5s;
-}
-
-#htmc:hover {
-    transform: translateY(-20px);
-    box-shadow: 0px 20px 20px white;
-}
-
-#htmc ul{
-    margin-top: 25px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    font-size: large;
-    list-style-type: none;
-}
-
-#htmc ul li span{
-    color: blueviolet;
-} 
-
-#htmc #img{
-    font-size: 10vw;
-    margin-top: 70px;
-}
-
-#cssc{
-    height: 350px;
-    width: 200px;
-    border-radius: 25px;
-    background-color: white;
-    transition: all ease 0.5s;
-}
-
-#cssc:hover {
-    transform: translateY(-20px);
-    box-shadow: 0px 20px 20px white;
-}
-
-#cssc ul{
-    margin-top: 25px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    font-size: large;
-    list-style-type: none;
-}
-
-#cssc ul li span{
-    color: blueviolet;
-}
-
-#cssc #img{
-    font-size: 10vw;
-    margin-top: 70px;
-}
-
-#cplsc{
-    height: 350px;
-    width: 200px;
-    border-radius: 25px;
-    background-color: white;
-    transition: all ease 0.5s;
-}
-
-#cplsc:hover {
-    transform: translateY(-20px);
-    box-shadow: 0px 20px 20px white;
-}
-
-#cplsc ul{
-    margin-top: 25px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    font-size: large;
-    list-style-type: none;
-}
-
-#cplsc ul li span{
-    color: blueviolet;
-}
-
-#cplsc #img{
-    font-size: 10vw;
-    margin-top: 20px;
-}
-
-.logo{
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-    text-decoration-color: none;
-    font-size: 100px;
-    gap: 5vw;
-    margin-top: 15vh;
+#quotediv{
+  grid-column: span 2;
 }

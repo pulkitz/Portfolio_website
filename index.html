@@ -4,81 +4,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- Dependencies -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.waves.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>PULKIT</title>
 </head>
 
-<body bgcolor="09122C">
-    <div id="Main">
-        <ul id="hotbar">
-            <li id="a"><a href="#Aboutme" id="txtl">About Me</a></li>
-            <li id="b"><a href="#Skills" id="txtl">Skills</a></li>
-            <li id="c"><a href="#Contact" id="txtl">Contact</a></li>
-        </ul>
+<body>
+    <div id="cursor"></div>
+    <div id="sml_cursor"></div>
+    <section id="Landing_page">
+        <div id="my_name">HI! I'm PULKIT</div>
+        <div id="Profile_Picture">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjXRonQgWJ6a9X2AFVi65_O_56od0fd8ctHES-xHPPksdkt5at5OQJOzZY23hrBH_wzGLLWYDGNMe2QpSNbJH2yCL7gY6ruxZrPm5Y24NRbWfkMzhE9l1VOc3Xo6Ag3ZngIp7sgzeEYhcfdzP2bY-aO622rvOaoXVd8J3lDjTIKt0xi-yJ1xZy7jtxsq-dOVoNf_6_uymECusoxBwfe9V0Duytbcx1lLV-EEVge0cSwF-pF64xKzNIIxW1DcwVOtTjGqHuT78RACkrXtZRDkbON386IT8SXFv8BpsLiyJkFcB-tNwgGIom7xUoRHNoVGre_jhJH8xlH-DsFOy0unXk6jkqBElr583sNh8mYQHdfFxKA4Ao6xDJsk4abvcrXyWWq9YFx4D3VeAVrwBygY70qm_2sYuWPtRhdyTMvoO8jMJMa_n1KVeML-flATKrhIElq-g7_jmde04zr7k_NlXJp2IXjZ2uhby8HefcoeA804ROBQBx5u_pZNnveVS7Vy61vWoxKU4FPv89RSjYijsJqTGIBWUqygwBMkXiy13CLr-E7dj1IoDXmYatHz8cUeNGdlmVUW_HkNOkRcAcy8NQnnrftaVoXsHWORD5lHESnilHUu9FSryWne5DWHQ0neiQD1CPo_B5j00KFBJYTeq4XlA4QxOBKd7E2_PszUqXBL9F_Y1oKnScEeeHRj2ubVm9fx5sUcobf1SCMwMhb3Bs9g6S6pWQsM15XyxJCXj6B5lLbLpxf2ocVXsiFED_WMYOiexETmrU42Aa2Kt68HmrjiSXC8w0tZSbxViqaq6d3Q1sl66YpovgWaz_fNmHa6WiboILpjY_b7cjWzC_HG7OTbgwcCBTN4DUb8CcArE7kSIFTZf6VXsxzDYXh9KddcPdI3DKSmb47mwc3kCw_LxWL2P6sIqTLZbZYH9Il5Fj2YOLb5OBcGgccI2fH-TeV88Dzw6VnOxl7XU0miBoo0li8W-5GFXffxZC_3ARq41ecK3rs-0uq92gUXhSBzxAqeam6dVZCNj-yDAfyUjVCDSaKZTpXMGqksvCZvKjLF_NnmH2WT1MA1sw=s288-c-no"
+                alt="Profile picture">
+        </div>
 
-        <div id="Aboutme">
-            <img src = "pfp.jpg" id="pfp">
-            <h1 class="name">Pulkit Kushwaha</h1>
-            <h1 id="animtxt">I am a <span id="js">Student</span></h1>
-        </div>
-        <div id="Skills">
-            <h1 id="lang">Languages</h1>
-            <div class="Card">
-                <div id="pyc">
-                    <h3> PYTHON</h3>
-                    <ul>
-                        <li><span>Basics</span>: Cleared</li>
-                        <li><span>libraries touched</span>: cv2, numpy, tkinter, pygame</li>
-                    </ul>
-                    <i class='bx bxl-python' id="img"></i>
-                </div>
-                <div id="htmc">
-                    <h3>HTML</h3>
-                    <ul>
-                        <li><span>Basics</span>: Cleared</li>
-                    </ul>
-                    <i class='bx bxl-html5' id="img"></i>
-                </div>
-                <div id="cssc">
-                    <h3> CSS</h3>
-                    <ul>
-                        <li><span>Basics</span>: Cleared</li>
-                    </ul>
-                    <i class='bx bxl-css3' id="img"></i>
-                </div>
-                <div id="cplsc">
-                    <h3>C++</h3>
-                    <ul>
-                        <li><span>Basics</span>: Cleared</li>
-                        <li><span>libraries touched</span>: iostream, math.h</li>
-                    </ul>
-                    <i class='bx bxl-c-plus-plus' id="img"></i>
+    </section>
+
+    <section id="About_me">
+        <h1>About Me</h1>
+        <div id="about_me">
+            <div id="card_me">
+                <h2>#BIO</h2>
+                <p>
+                    Hi, I'm Pulkit Kushwaha, a school student who enjoys exploring how things work. I've always been
+                    curious and loved understanding the logic behind things.<br>
+                    <br>This curiosity led me to programming, where I enjoy building small projects, experimenting with
+                    code, and learning new technologies step by step. I'm constantly exploring and improving while
+                    turning ideas into things I can actually build.<br>
+                    <br>I believe that learning never really stops, and I'm always excited to discover something
+                    new.<br>
+                </p>
+            </div>
+
+            <div id="card_me">
+                <h2>#Quick Info</h2>
+                <p>
+                    <i class="fa-solid fa-user"></i> Name: Pulkit Kushwaha<br>
+                    <i class="fa-solid fa-location-dot"></i> Location: India<br>
+                    <i class="fa-solid fa-graduation-cap"></i> Status: Junior College Student<br>
+                    <i class="fa-solid fa-cake-candles"></i> Age: <span id="age"></span>
+                </p>
+            </div>
+
+            <div id="card_me">
+                <h2>#Interest</h2>
+                <ul>
+                    <li><i class="fa-solid fa-tv"></i> Anime</li>
+                    <li><i class="fa-solid fa-language"></i> Japanese Language</li>
+                    <li><i class="fa-solid fa-flask"></i> Science</li>
+                    <li><i class="fa-solid fa-video"></i> Video Editing</li>
+                </ul>
+            </div>
+            <div id="quotediv">
+                <div id="card_me">
+
+                    <h2>#Quote</h2>
+                    <p id="quote">「常識を疑え」 <br>
+                        Question common sense.
+                    </p>
                 </div>
             </div>
         </div>
-        <div id="Contact">
-            <div class="logo">
-                <a href="https://github.com/pulkitz"><i class='bx bxl-github' id="l" undefined ></i></a>
-               <a href="https://www.instagram.com/pulkitz_"> <i class='bx bxl-instagram' id="l"></i></a>
-            </div>
-        </div>
-    </div>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    </section>
+
+    <section id="Skills">
+
+    </section>
+
+
+    <section id="Projects">
+
+    </section>
+
+    <section id="contact_me">
+
+    </section>
+
+    <!-- scripts-->
     <script>
-        var typed = new Typed('#js', {
-            strings: ['Student', 'Programmer', 'Learner', 'Web Developer'],
-            loop: true,
-            backSpeed: 60,
-            typeSpeed: 50,
+        VANTA.WAVES({
+            el: "#Landing_page",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: true,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x150F30,
+            shininess: 20.00,
+            waveHeight: 30,
+            waveSpeed: 1,
         })
+
+
+        const cursor = document.getElementById("cursor");
+        const sml_cursor = document.getElementById("sml_cursor");
+
+        let mouseX = 0;
+        let mouseY = 0;
+
+        let posX = 0;
+        let posY = 0;
+
+        document.addEventListener("mousemove", (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+
+            // big cursor follows instantly
+            cursor.style.transform = `translate(${mouseX}px, ${mouseY}px) translate(-50%, -50%)`;
+        });
+
+        function animate() {
+
+            // small cursor smoothly follows
+            posX += (mouseX - posX) * 0.15;
+            posY += (mouseY - posY) * 0.15;
+
+            sml_cursor.style.transform =
+                `translate(${posX}px, ${posY}px) translate(-50%, -50%)`;
+
+            requestAnimationFrame(animate);
+        }
+
+        animate();
+
+        // Calculate age
+        function calculateAge(birthDate) {
+            const today = new Date();
+            const birth = new Date(birthDate);
+            let age = today.getFullYear() - birth.getFullYear();
+            const monthDiff = today.getMonth() - birth.getMonth();
+
+            if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birth.getDate())) {
+                age--;
+            }
+
+            return age;
+        }
+        ageElement = document.getElementById("age");
+        ageElement.textContent = calculateAge("2010-04-24");
     </script>
+
 </body>
 
 </html>
