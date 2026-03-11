@@ -187,7 +187,42 @@ h1 {
   right: -2rem;
 }
 
-.bottom-middle{
+.bottom-middle {
   bottom: -10rem;
   left: 40%;
 }
+
+#Wrapper {
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#popup {
+  position:absolute;
+  height: 100%;
+  width: 100%;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, -50%);
+  flex-wrap: wrap;
+  background-color: #33257a;
+  border-radius: 10px;
+  display: none;
+  padding: 2rem;
+  z-index: 9;
+}
+
+#close{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+#popup h2{
+  font-family: 'Press Start 2P';
+  color: wheat;
+}
+
